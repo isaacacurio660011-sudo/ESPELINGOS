@@ -6,13 +6,18 @@ include namespace std
 int main()
 {
 //Menu Leccion
+//4 opciones ingreso de datos, mostrar datos, ejericio1, ejercicio2, salir ademas una interfaz agradable
 
 //Ingreso de datos
+//Datos del usuario nombre, edad, carrera, año, universidad
+//Mostrar datos
+// mostrar los datos ingresados
 
-//traduccion español a ingles
+//Ejercicio español a ingles
+//Que el programa envie una palabra en español y el usuario mande la respuesta y que se verifique si es correcta
 
-//traduccion ingles a español
-
+//Ejercicio ingles a español
+//Que el programa envie una palabra en ingles y el usuario mande la respuesta y que se verifique si es correcta
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
