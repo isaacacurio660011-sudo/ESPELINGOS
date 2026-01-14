@@ -6,7 +6,7 @@ include namespace std
 int main()
 {
 //Menu Leccion
-//4 opciones ingreso de datos, mostrar datos, ejericio1, ejercicio2, salir ademas una interfaz agradable
+//5 opciones: ingreso de datos, mostrar datos, ejericio1, ejercicio2, salir ademas una interfaz agradable
 
 //Ingreso de datos
 //Datos del usuario nombre, edad, carrera, año, universidad
