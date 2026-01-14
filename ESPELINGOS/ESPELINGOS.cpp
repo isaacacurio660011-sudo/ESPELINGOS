@@ -5,8 +5,13 @@
 include namespace std
 int main()
 {
-    int hellohola;
-    cout << "Hello World!\n";
+//Ingreso de datos
+
+//Menu Leccion
+
+//traduccion español a ingles
+
+//traduccion ingles a español
 
 }
 
