@@ -5,7 +5,9 @@
 include namespace std
 int main()
 {
+    int hola;
     cout << "Hello World!\n";
+
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
