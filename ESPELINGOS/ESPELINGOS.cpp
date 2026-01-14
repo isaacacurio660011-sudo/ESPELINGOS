@@ -5,9 +5,9 @@
 include namespace std
 int main()
 {
-//Ingreso de datos
-
 //Menu Leccion
+
+//Ingreso de datos
 
 //traduccion español a ingles
 
