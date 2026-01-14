@@ -5,7 +5,7 @@
 include namespace std
 int main()
 {
-    int hola;
+    int hellohola;
     cout << "Hello World!\n";
 
 }
