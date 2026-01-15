@@ -1,0 +1,11 @@
+Cidigo realizado para opcion 1 y 2 del menu principal de opciones
+la opcion uno llamada Ingreso de datos:
+Permite ingresar los datos del usuario y mantenerlos almacenados.
+Estos datos seran:
+-nombre
+-edad
+-carrera
+-año que cruza
+-universidad
+la opcion dos llamada Mostrar datos:
+Permitira visualizar los datos ingresados anteriormente.

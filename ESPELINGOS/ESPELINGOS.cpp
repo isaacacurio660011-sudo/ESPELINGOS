@@ -38,6 +38,9 @@ void ingresarDatos(string &nombre, int &edad, string &carrera, int &anio, string
     cin >> edad;
     cin.ignore();
 
+    cout << "Ingrese su universidad: ";
+    getline(cin, universidad);
+
     cout << "Ingrese su carrera: ";
     getline(cin, carrera);
 
@@ -45,8 +48,6 @@ void ingresarDatos(string &nombre, int &edad, string &carrera, int &anio, string
     cin >> anio;
     cin.ignore();
 
-    cout << "Ingrese su universidad: ";
-    getline(cin, universidad);
 }
 
 // Función para mostrar datos
@@ -55,9 +56,9 @@ void mostrarDatos(string nombre, int edad, string carrera, int anio, string univ
     cout << "\n--- DATOS INGRESADOS ---\n";
     cout << "Nombre: " << nombre << endl;
     cout << "Edad: " << edad << endl;
+    cout << "Universidad: " << universidad << endl;
     cout << "Carrera: " << carrera << endl;
     cout << "Año: " << anio << endl;
-    cout << "Universidad: " << universidad << endl;
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
