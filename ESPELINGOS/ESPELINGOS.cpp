@@ -2,22 +2,62 @@
 //
 
 #include <iostream>
-include namespace std
+#include <string>
+using namespace std;
+
+void ingresarDatos(string &nombre, int &edad, string &carrera, int &anio, string &universidad);
+void mostrarDatos(string nombre, int edad, string carrera, int anio, string universidad);
+
 int main()
 {
 //Menu Leccion
 //5 opciones: ingreso de datos, mostrar datos, ejericio1, ejercicio2, salir ademas una interfaz agradable
 
-//Ingreso de datos
-//Datos del usuario nombre, edad, carrera, año, universidad
-//Mostrar datos
-// mostrar los datos ingresados
+ string nombre, carrera, universidad;
+    int edad, anio;
+
+    ingresarDatos(nombre, edad, carrera, anio, universidad);
+    mostrarDatos(nombre, edad, carrera, anio, universidad);
+
+    return 0;
 
 //Ejercicio español a ingles
 //Que el programa envie una palabra en español y el usuario mande la respuesta y que se verifique si es correcta
 
 //Ejercicio ingles a español
 //Que el programa envie una palabra en ingles y el usuario mande la respuesta y que se verifique si es correcta
+}
+
+// Función para ingresar datos
+void ingresarDatos(string &nombre, int &edad, string &carrera, int &anio, string &universidad)
+{
+    cout << "Ingrese su nombre: ";
+    getline(cin, nombre);
+
+    cout << "Ingrese su edad: ";
+    cin >> edad;
+    cin.ignore();
+
+    cout << "Ingrese su carrera: ";
+    getline(cin, carrera);
+
+    cout << "Ingrese el año que cursa: ";
+    cin >> anio;
+    cin.ignore();
+
+    cout << "Ingrese su universidad: ";
+    getline(cin, universidad);
+}
+
+// Función para mostrar datos
+void mostrarDatos(string nombre, int edad, string carrera, int anio, string universidad)
+{
+    cout << "\n--- DATOS INGRESADOS ---\n";
+    cout << "Nombre: " << nombre << endl;
+    cout << "Edad: " << edad << endl;
+    cout << "Carrera: " << carrera << endl;
+    cout << "Año: " << anio << endl;
+    cout << "Universidad: " << universidad << endl;
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
