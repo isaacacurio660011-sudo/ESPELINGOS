@@ -2,30 +2,87 @@
 //
 
 #include <iostream>
-include namespace std
-int main()
-{
-//Menu Leccion
-//5 opciones: ingreso de datos, mostrar datos, ejericio1, ejercicio2, salir ademas una interfaz agradable
+using namespace std;
 
-//Ingreso de datos
-//Datos del usuario nombre, edad, carrera, año, universidad
-//Mostrar datos
-// mostrar los datos ingresados
+int main() {
+    int opcion;
+    int correctas = 0;
 
-//Ejercicio español a ingles
-//Que el programa envie una palabra en español y el usuario mande la respuesta y que se verifique si es correcta
+    cout << "Seleccione la traducción correcta (Español → Inglés)\n\n";
 
-//Ejercicio ingles a español
-//Que el programa envie una palabra en ingles y el usuario mande la respuesta y que se verifique si es correcta
+    // PALABRA 1
+    cout << "1) Casa\n";
+    cout << "1. House\n";
+    cout << "2. Dog\n";
+    cout << "3. Book\n";
+    cout << "4. Water\n";
+    cout << "Seleccione una opción: ";
+    cin >> opcion;
+
+    if (opcion == 1) {
+        cout << "¡Muy bien! Excelente respuesta.\n\n";
+        correctas++;
+    } else {
+        cout << "Respuesta incorrecta. Sigue intentando.\n\n";
+    }
+
+    // PALABRA 2
+    cout << "2) Perro\n";
+    cout << "1. Cat\n";
+    cout << "2. Dog\n";
+    cout << "3. School\n";
+    cout << "4. Apple\n";
+    cout << "Seleccione una opción: ";
+    cin >> opcion;
+
+    if (opcion == 2) {
+        cout << "¡Excelente! Vas por buen camino.\n\n";
+        correctas++;
+    } else {
+        cout << "Incorrecto, pero no te rindas.\n\n";
+    }
+
+    // PALABRA 3
+    cout << "3) Libro\n";
+    cout << "1. Water\n";
+    cout << "2. Chair\n";
+    cout << "3. Book\n";
+    cout << "4. Bread\n";
+    cout << "Seleccione una opción: ";
+    cin >> opcion;
+
+    if (opcion == 3) {
+        cout << "¡Correcto! Sigue así.\n\n";
+        correctas++;
+    } else {
+        cout << "No es correcto, intenta la siguiente.\n\n";
+    }
+
+    // PALABRA 4
+    cout << "4) Agua\n";
+    cout << "1. Milk\n";
+    cout << "2. Juice\n";
+    cout << "3. Coffee\n";
+    cout << "4. Water\n";
+    cout << "Seleccione una opción: ";
+    cin >> opcion;
+
+    if (opcion == 4) {
+        cout << "¡Muy bien! Lo lograste.\n\n";
+        correctas++;
+    } else {
+        cout << "Respuesta incorrecta, pero sigue practicando.\n\n";
+    }
+
+    cout << "Resultado final: " << correctas << " de 4 respuestas correctas.\n";
+
+    if (correctas == 4) {
+        cout << "¡Excelente trabajo! Dominaste todas las palabras.\n";
+    } else if (correctas >= 2) {
+        cout << "¡Buen intento! Vas mejorando cada vez más.\n";
+    } else {
+        cout << "No te preocupes, la práctica te hará mejorar.\n";
+    }
+
+    return 0;
 }
-
-// Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
-// Depurar programa: F5 o menú Depurar > Iniciar depuración
-
-// Sugerencias para primeros pasos: 1. Use la ventana del Explorador de soluciones para agregar y administrar archivos
-//   2. Use la ventana de Team Explorer para conectar con el control de código fuente
-//   3. Use la ventana de salida para ver la salida de compilación y otros mensajes
-//   4. Use la ventana Lista de errores para ver los errores
-//   5. Vaya a Proyecto > Agregar nuevo elemento para crear nuevos archivos de código, o a Proyecto > Agregar elemento existente para agregar archivos de código existentes al proyecto
-//   6. En el futuro, para volver a abrir este proyecto, vaya a Archivo > Abrir > Proyecto y seleccione el archivo .sln
