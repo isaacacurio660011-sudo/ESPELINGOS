@@ -1,19 +1,83 @@
-// ESPELINGOS.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
+// ESPELINGOS.cpp : Ejecicios de Espelingo Ingles a Español
 
-#include <iostream>
-include namespace std
-int main()
-{
-    cout << "Hello World!\n";
+#include <iostream>    // Necesario para entrada y salida
+#include <string>      // Necesario para usar string
+#include <cstdlib>    // Necesario para system("cls")
+#include <cctype>     // Necesario para toupper()
+using namespace std;
+
+int main() {
+    int numEjercicios;
+    string respuesta;
+    
+    // Lista de palabras (inglés → español)
+    string ingles[] = {"Hello", "Goodbye", "Please", "Thank you", "Sorry", 
+                       "Yes", "No", "Water", "Food", "House", 
+                       "Friend", "Family", "Love", "Time", "Day"};
+                       
+    string espanol[] = {"Hola", "Adiós", "Por favor", "Gracias", "Lo siento/Perdón", 
+                        "Sí", "No", "Agua", "Comida", "Casa", 
+                        "Amigo", "Familia", "Amor", "Tiempo", "Día"};
+    
+    const int totalPalabras = 15; // ¡Puedes agregar más palabras aquí arriba!
+
+    cout << "======================================\n";
+    cout << "   Practica de Espelingo Ingles → Español\n";
+    cout << "======================================\n\n";
+
+    cout << "Cuantos ejercicios quieres practicar? (puede elejir entre 1 a 15): ";
+    cin >> numEjercicios;
+
+    if (numEjercicios < 1) numEjercicios = 1;
+    if (numEjercicios > totalPalabras) numEjercicios = totalPalabras;
+
+    cout << "\nMuy bien practiquemos con " << numEjercicios << " ejercicios...\n\n";
+
+    cout << "Presiona Enter para comenzar...";
+    cin.get(); cin.get(); 
+    system("cls");   
+
+    int correctas = 0;
+
+    for (int i = 0; i < numEjercicios; i++) {
+        cout << "----------------------------------------\n";
+        cout << "Ejercicio " << (i+1) << " de " << numEjercicios << "\n\n";
+        cout << "Traduce al español:  " << ingles[i] << "\n\n";
+        cout << "→ ";
+
+        cin >> respuesta;
+        // Convertir la primera letra a mayúscula para que la comparación sea mas optima
+        if (respuesta.length() > 0) {
+            respuesta[0] = toupper(respuesta[0]);
+        }
+
+        if (respuesta == espanol[i]) {
+            cout << "\n¡Correcto! ✓\n\n";
+            correctas++;
+        } else {
+            cout << "\nIncorrecto ✗\n";
+            cout << "La respuesta correcta es: " << espanol[i] << "\n\n";
+        }
+
+        cout << "Presiona Enter para continuar...";
+        cin.get(); cin.get();
+        system("cls");  
+    }
+
+    // Resultado final
+    cout << "\n======================================\n";
+    cout << "         ¡PRACTICA FINALIZADA!\n";
+    cout << "======================================\n";
+    cout << "Aciertos: " << correctas << " de " << numEjercicios << "\n";
+    cout << "Porcentaje: " << (correctas * 100 / numEjercicios) << "%\n\n";
+
+    if (correctas == numEjercicios) {
+        cout << "¡PERFECTO! Eres un crack :D\n";
+    } else if (correctas >= numEjercicios * 0.7) {
+        cout << "¡Muy bien! Vas por buen camino!\n";
+    } else {
+        cout << "Sigue practicando, ¡tú puedes!\n";
+    }
+
+    return 0;
 }
-
-// Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
-// Depurar programa: F5 o menú Depurar > Iniciar depuración
-
-// Sugerencias para primeros pasos: 1. Use la ventana del Explorador de soluciones para agregar y administrar archivos
-//   2. Use la ventana de Team Explorer para conectar con el control de código fuente
-//   3. Use la ventana de salida para ver la salida de compilación y otros mensajes
-//   4. Use la ventana Lista de errores para ver los errores
-//   5. Vaya a Proyecto > Agregar nuevo elemento para crear nuevos archivos de código, o a Proyecto > Agregar elemento existente para agregar archivos de código existentes al proyecto
-//   6. En el futuro, para volver a abrir este proyecto, vaya a Archivo > Abrir > Proyecto y seleccione el archivo .sln
