@@ -10,4 +10,7 @@ Estado de el sistema Alpha sin una version de pruebas con diseño existente
 el codigo adjunto a este es la version completa de la alpha con correcciones eh implementacion de las 
 funciones dichas anteriormente con un registro de usuario basico que no pide contraseña em metodo 
 de arranque de este es por el visual studio code con extencion de c++ y compilador incluido o usando otro 
-IDE de c++ que usted desee
+IDE de c++ que usted desee (Esta incluido el archivo .exe para correrlo directamente en windows solo si se 
+cumple el tener un compilador mingw-w64 o g++ instalado en su sistema operativo) caso contrario usar IDE
+de c++ como codeblocks o visual studio.
+El sistema es de uso libre y gratuito para todo aquel que desee aprender idiomas basicos
