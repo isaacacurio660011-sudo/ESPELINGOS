@@ -1,0 +1,52 @@
+## Módulo de Menú – ESPElingo 
+ Descripción
+Este repositorio contiene el **módulo del menú principal** del sistema **ESPElingo**, un proyecto académico orientado al aprendizaje básico de idiomas (inglés y español).
+
+El menú cumple la función de organizar y centralizar todas las opciones del sistema, permitiendo al usuario navegar de forma clara entre las distintas funcionalidades implementadas por los integrantes del grupo.
+## Objetivo del módulo
+
+- Diseñar un **menú interactivo** funcional en C/C++.
+- Integrar las diferentes opciones del sistema en un solo punto de acceso.
+- Facilitar la ejecución de los módulos desarrollados por cada compañero.
+- Mantener una estructura clara y ordenada del programa.
+
+##  Opciones del menú
+El menú principal permite acceder a las siguientes secciones del sistema:
+
+1. **Ingreso de datos del usuario**  
+   Permite registrar información básica del usuario y mostrar una breve introducción sobre el funcionamiento del sistema.
+
+2. **Menú de opciones generales**  
+   Recopila y organiza todas las funcionalidades disponibles dentro del sistema ESPElingo.
+
+3. **Pruebas de Inglés a Español**  
+   Pequeñas pruebas que refuerzan el aprendizaje y comprensión del idioma inglés.
+
+4. **Pruebas de Español a Inglés**  
+   Actividades diseñadas para practicar la traducción y conocimientos básicos del idioma inglés.
+
+0. **Salir del sistema**
+
+Cada opción del menú llama al código correspondiente, manteniendo la modularidad del proyecto.
+
+## Tecnologías utilizadas
+- Lenguaje: **C / C++**
+- IDE recomendado: **Visual Studio Code**
+- Compilador: **C++ (extensión incluida en VS Code)**
+- Sistema operativo: Windows
+
+## Ejecución
+- El sistema puede ejecutarse desde:
+  - **Visual Studio Code** con extensión de C++
+  - Cualquier otro IDE compatible con C/C++
+- También se incluye un archivo **`.exe`** para ejecutar el programa directamente.
+
+## Estado del módulo
+- **Versión:** Alpha  
+- El menú corresponde a una versión funcional inicial.
+- Integrado con las opciones principales del sistema.
+- No incluye autenticación con contraseña (registro básico).
+
+## Nota
+Este módulo forma parte del proyecto académico **ESPElingo** y fue desarrollado con fines educativos.
+
