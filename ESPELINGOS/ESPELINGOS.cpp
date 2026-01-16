@@ -27,8 +27,8 @@ public:
         cout << "          ESPELINGO\n";
         cout << " Aprende ingles jugando\n";
         cout << "==============================\n";
-        cout << "1. Iniciar sesion\n";
-        cout << "2. Registrarse\n";
+        cout << "1. Registrarse\n";
+        cout << "2. Iniciar sesion\n";
         cout << "3. Salir\n";
         cout << "Seleccione una opcion: ";
     }
@@ -38,7 +38,7 @@ public:
         cout << "Usuario: " << nombre << "\n\n";
         cout << "1. Juego Ingles → Espanol\n";
         cout << "2. Juego Espanol → Ingles\n";
-        cout << "3. Ver progreso\n";
+        cout << "3. Ver Datos\n";
         cout << "4. Cerrar sesion\n";
         cout << "Seleccione una opcion: ";
     }
@@ -106,7 +106,7 @@ public:
     }
 
     void mostrarProgreso() const {
-        cout << "\n--- PROGRESO DEL ESTUDIANTE ---\n";
+        cout << "\n--- DATOS DEL ESTUDIANTE ---\n";
         cout << "Nombre: " << nombre << endl;
         cout << "Edad: " << edad << endl;
         cout << "Universidad: " << universidad << endl;
@@ -128,7 +128,7 @@ public:
 
         cout << "\n--- INGLES → ESPAÑOL ---\n";
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 6; i++) {
             cout << "Traduce \"" << ingles[i] << "\": ";
             getline(cin, respuesta);
 
