@@ -6,4 +6,8 @@ sobre todo
 sistema apartados tales como y sobre todo también sin embargo 
 3 y 4.- pruebas de inglés a español y español a inglés pequeñas pruebas quedarán el conocimiento sobre las 
 características de inglés y español para poder tener prácticas y avances básicos del Español al ingles 
-Estado de el sistema Alpha sin una version de pruebas con diseño existente */
+Estado de el sistema Alpha sin una version de pruebas con diseño existente 
+el codigo adjunto a este es la version completa de la alpha con correcciones eh implementacion de las 
+funciones dichas anteriormente con un registro de usuario basico que no pide contraseña em metodo 
+de arranque de este es por el visual studio code con extencion de c++ y compilador incluido o usando otro 
+IDE de c++ que usted desee (Aparte esta añadido un archivo .exe para correr directamente el programa) 
