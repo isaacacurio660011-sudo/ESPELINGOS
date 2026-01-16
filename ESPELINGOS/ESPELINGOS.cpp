@@ -1,57 +1,64 @@
-// ESPELINGOS.cpp : Ejecicios de Espelingo Ingles a Español
+// ESPELINGOS.cpp : Ejercicios de Espelingo Ingles a Español
 
-#include <iostream>    // Necesario para entrada y salida
-#include <string>      // Necesario para usar string
-#include <cstdlib>    // Necesario para system("cls")
-#include <cctype>     // Necesario para toupper()
+#include <iostream>
+#include <string>
+#include <cstdlib>
+#include <cctype>
+
 using namespace std;
+
+// FUNCION PARA CONVERTIR TEXTO A MINUSCULAS
+string aMinusculas(string texto) {
+    for (char &c : texto) {
+        c = tolower(c);
+    }
+    return texto;
+}
 
 int main() {
     int numEjercicios;
     string respuesta;
-    
+
     // Lista de palabras (inglés → español)
     string ingles[] = {"Hello", "Goodbye", "Please", "Thank you", "Sorry", 
                        "Yes", "No", "Water", "Food", "House", 
                        "Friend", "Family", "Love", "Time", "Day"};
-                       
+
     string espanol[] = {"Hola", "Adiós", "Por favor", "Gracias", "Lo siento/Perdón", 
                         "Sí", "No", "Agua", "Comida", "Casa", 
                         "Amigo", "Familia", "Amor", "Tiempo", "Día"};
-    
-    const int totalPalabras = 15; // ¡Puedes agregar más palabras aquí arriba!
+
+    const int totalPalabras = 15;
 
     cout << "======================================\n";
     cout << "   Practica de Espelingo Ingles → Español\n";
     cout << "======================================\n\n";
 
-    cout << "Cuantos ejercicios quieres practicar? (puede elejir entre 1 a 15): ";
+    cout << "Cuantos ejercicios quieres practicar? (1 a 15): ";
     cin >> numEjercicios;
 
     if (numEjercicios < 1) numEjercicios = 1;
     if (numEjercicios > totalPalabras) numEjercicios = totalPalabras;
 
-    cout << "\nMuy bien practiquemos con " << numEjercicios << " ejercicios...\n\n";
+    cout << "\nMuy bien, practicaremos " << numEjercicios << " ejercicios...\n\n";
 
     cout << "Presiona Enter para comenzar...";
-    cin.get(); cin.get(); 
-    system("cls");   
+    cin.get();
+    cin.get();
+    system("cls");
 
     int correctas = 0;
 
     for (int i = 0; i < numEjercicios; i++) {
         cout << "----------------------------------------\n";
-        cout << "Ejercicio " << (i+1) << " de " << numEjercicios << "\n\n";
+        cout << "Ejercicio " << (i + 1) << " de " << numEjercicios << "\n\n";
         cout << "Traduce al español:  " << ingles[i] << "\n\n";
         cout << "→ ";
 
-        cin >> respuesta;
-        // Convertir la primera letra a mayúscula para que la comparación sea mas optima
-        if (respuesta.length() > 0) {
-            respuesta[0] = toupper(respuesta[0]);
-        }
+        cin.ignore();               // LIMPIA BUFFER
+        getline(cin, respuesta);    // PERMITE ESPACIOS
 
-        if (respuesta == espanol[i]) {
+        if (aMinusculas(respuesta) == aMinusculas(espanol[i])) {
             cout << "\n¡Correcto! ✓\n\n";
             correctas++;
         } else {
@@ -60,12 +67,12 @@ int main() {
         }
 
         cout << "Presiona Enter para continuar...";
-        cin.get(); cin.get();
-        system("cls");  
+        cin.get();
+        system("cls");
     }
 
     // Resultado final
-    cout << "\n======================================\n";
+    cout << "======================================\n";
     cout << "         ¡PRACTICA FINALIZADA!\n";
     cout << "======================================\n";
     cout << "Aciertos: " << correctas << " de " << numEjercicios << "\n";
